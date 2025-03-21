@@ -8213,6 +8213,7 @@ a:hover {
 }
 
 /* 帧率检测 */
+/*
 #fps {
   position: fixed;
   left: 10px;
@@ -8231,6 +8232,7 @@ a:hover {
   padding: 4px;
   border-radius: 4px;
 }
+*/
 
 /* 侧边栏 */
 div#rightside {

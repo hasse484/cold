@@ -2820,6 +2820,7 @@ setInterval(() => {
 
 
 /* fps检测 start */
+/*
 if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {
   var rAF = function () {
     return (
@@ -2871,6 +2872,7 @@ if (window.localStorage.getItem("fpson") == undefined || window.localStorage.get
 } else {
   document.getElementById("fps").style = "display:none!important"
 }
+*/
 /* fps检测 end */
 
 //----------------------------------------------------------------
