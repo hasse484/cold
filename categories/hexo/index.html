@@ -842,7 +842,30 @@ rgba(0,0,0,0.2);
     </script>
 
 
-<!-- pjax --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- pjax -->
+
+    <script type="text/javascript">
+        $.getScript("https://cdn.jsdelivr.net/npm/pjax/pjax.min.js",loadPjax)
+        function loadPjax(){
+            var pjax = new Pjax({
+                selectors: [
+                    "head title",
+                    'head meta[name="keywords"]',
+                    'head meta[name="description"]',
+                    "main#main_wrap"
+                ],
+                cache: true,
+                cacheBust: false
+            });
+        }
+
+        // Pjax请求错误时，跳转到404页面
+        document.addEventListener('pjax:error', (err) => {
+            if (err.request.status === 404) {
+                pjax.loadUrl('/404.html')
+            }
+        })
+    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
