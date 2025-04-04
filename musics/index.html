@@ -4,7 +4,7 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="暮雪の博客">
+    <meta name="keywords" content="musics, 暮雪の博客">
     <meta name="description" content="暮雪の博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,53 +17,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>暮雪の博客</title>
+    <title>musics | 暮雪の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
 
-    <!-- index cover -->
-    <!-- <link rel="stylesheet preload" type="text/css" href="/css/indexcover.css"> -->
-    <style>
-        .carousel-control {
-            width: 45px;
-            height: 45px;
-            line-height: 55px;
-            border-radius: 45px;
-            background: transparent;
-            cursor: pointer;
-            z-index: 100;
-        }
-        
-        #prev-cover {
-            position: absolute;
-            top: 48%;
-            left: 8px;
-        }
-        
-        #next-cover {
-            position: absolute;
-            top: 48%;
-            right: 8px;;
-        }
-        
-        #prev-cover i {
-            margin-right: 3px;
-        }
-        
-        #next-cover i {
-            margin-left: 3px;
-        }
-        
-        .carousel-control:hover {
-            background-color: rgba(0, 0, 0, .4);
-        }
-        
-        .carousel-control i {
-            color: #fff;
-            font-size: 2.4rem;
-        }
-    </style>
+    <!-- bg-cover style     -->
 
 
 
@@ -84,6 +43,10 @@
 
 
 
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
 
 
 
@@ -305,15 +268,16 @@
 </header>
 
     <main id="main_wrap">
-        
+        <style type="text/css">
+    /* don't remove. */
+    .about-cover {
+        height: 75vh;
+    }
+</style>
 
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -354,203 +318,122 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
 
 <main class="content">
+    <div id="aboutme" class="container about-container">
+        <div class="card">
+            <div class="card-content">
+                <div class="music-player">
+                    
+                        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        font-size: 15px;
+        color: #42b983;
+    }
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
+</style>
+<div class="music-player">
     
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;哲学与反思
-    </div>
+        <div class="title center-align">
+            <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
+        </div>
     
     <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            “世界上最快乐的事，莫过于为理想而奋斗。”​​————苏格拉底
-        </div>
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="13539994799"
+                   fixed='false'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.5'
+                   listMaxHeight='525px'
+                   list-folded='false'
+        >
+        </meting-js>
     </div>
 </div>
 
-                    
 
-                    
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
-                    
 
-                    
-                    <div id="recommend-sections" class="recommend">
+
+                        <style>
+                        .bubbles > .particle {
+                            /*初始透明度为0*/
+                            opacity: 0;
+                            position: absolute;
+                            /*初始颜色为荧光色，透明度为0.7*/
+                            background-color: rgba(128,255,0,0.7);
+                            /*使用bubbles动画，持续时间18秒，缓慢进入，无限循环*/
+                            animation: bubbles 18s ease-in infinite;
+                            border-radius: 100%;
+                        }
+                        /*css keyframes 动画*/
+                        @keyframes bubbles {
+                            0% {
+                                opacity: 0;
+                            }
+                            5% {
+                                opacity: 1;
+                                transform: translate(0, -20%);
+                            }
+                            /*这里-8000%表示是气泡的8000%*/
+                            100% {
+                                opacity: 0;
+                                transform: translate(0, -8000%);
+                            }
+                        }
+                        </style>
+                        <!-- 这里让元素宽度100%（和页面等宽） -->
+                        <div style="width: 100%; height: 100%; position: relative; bottom: 0px;" class="particletext bubbles">
+
+
+
+                        </div>
+                        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+                        <script>
+                          function bubbles() {
+                             $.each($(".particletext.bubbles"), function(){
+                                var bubblecount = ($(this).width()/50)*10;
+                                for(var i = 0; i <= bubblecount; i++) {
+                                   var size = ($.rnd(40,80)/10);
+                                   //这里的animation-delay很重要，关系到你的特效是否看上去是连续无断层的，上一步中css是18秒，所以这一步中延迟时间就设置成$.rnd(0,180)/10)
+                                   $(this).append('<span class="particle" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;width:' + size + 'px; height:' + size + 'px;animation-delay: ' + ($.rnd(0,180)/10) + 's;"></span>');
+                                }
+                             });
+                          }
+                          jQuery.rnd = function(m,n) {
+                              m = parseInt(m);
+                              n = parseInt(n);
+                              return Math.floor( Math.random() * (n - m + 1) ) + m;
+                          }
+                          bubbles();
+                        </script>
                         
-
-
-
-                    </div>
                     
                 </div>
             </div>
         </div>
     </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2025/04/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/24.png" class="responsive-img" alt="Hexo d上传到Github报错解决办法">
-                            
-                            <span class="card-title">Hexo d上传到Github报错解决办法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Hexo d错误
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-04-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/hexo/">
-                            <span class="chip bg-color">hexo</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-        </div>
-    </article>
-
 </main>
-
-
-
     </main>   
     <footer class="page-footer bg-color">
     
