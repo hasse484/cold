@@ -94,7 +94,7 @@ hr {
 }
 
 blockquote {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid #00BFFF;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
     color: #666;
     background-color: rgba(66, 185, 131, .1);
@@ -257,7 +257,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #00F5FF 0%, #00E5EE 100%);
+    background: linear-gradient(to right, #00BFFF 0%, #00E5EE 100%);
     opacity: 0.8;
 }
 
@@ -875,7 +875,7 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #00BFFF;
     text-decoration: underline;
 }
 
@@ -1058,7 +1058,7 @@ article .article-tags .chip {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: #42b983;
+    color: #00BFFF;
     background: #fff;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
@@ -1066,17 +1066,17 @@ article .article-tags .chip {
 
 #artDetail .tag_share .article-tag .chip:hover {
     color: #fff;
-    background: #42b983;
+    background: #00BFFF;
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #00BFFF;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #00BFFF;
     font-weight: 500;
 }
 
@@ -1095,7 +1095,7 @@ article .article-tags .chip {
 
 #artDetail .post-info .post-category:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #00BFFF;
     text-decoration: underline;
 }
 
@@ -1158,7 +1158,7 @@ article .article-tags .chip {
 
 #artDetail .reprint a {
     font-size: 1.05rem;
-    color: #42b983;
+    color: #00BFFF;
     font-weight: 500;
 }
 
@@ -1174,7 +1174,7 @@ article .article-tags .chip {
 
 #articleContent a {
     padding: 0 2px;
-    color: #42b983;
+    color: #00BFFF;
     font-weight: 500;
     text-decoration: underline;
     word-wrap: break-word;
@@ -1608,7 +1608,7 @@ thead {
 }
 
 .post-statis .statis .count a {
-    color: #42b983;
+    color: #00BFFF;
 }
 
 .post-statis .statis .name {
@@ -1878,7 +1878,7 @@ p.search-result-summary{
 
 .search-result-list .search-result-title {
     font-size: 1.4rem;
-    color: #42b983;
+    color: #00BFFF;
 }
 
 .search-result-list li {
@@ -1908,7 +1908,7 @@ p.search-result-summary{
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #00BFFF 0%, #00BFFF 100%);
     width: 48px;
     height: 48px;
 }

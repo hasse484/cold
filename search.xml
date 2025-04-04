@@ -4,26 +4,25 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="/2025/04/03/1/"/>
-      <url>/2025/04/03/1/</url>
+      <title>Hexo d上传到Github报错解决办法</title>
+      <link href="/2025/04/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/"/>
+      <url>/2025/04/04/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="language-bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><pre><code class="language-c">#include &lt;stdio.h&gt;int main()&#123;    printf(&quot;Hello World!\n&quot;);    return 0;&#125;</code></pre><p><img src="https://cdn.rickyxrc.cc/friends/Eray.png"><br><img src="/img/IMG20240710113427.png"><br><img src="/../img/IMG20240710113427.png"></p><h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题1-1"><a href="#标题1-1" class="headerlink" title="标题1.1"></a>标题1.1</h2><h3 id="标题1-1-1"><a href="#标题1-1-1" class="headerlink" title="标题1.1.1"></a>标题1.1.1</h3>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/04/01/hello-world/"/>
-      <url>/2025/04/01/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="language-bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>Hexo d发生错误</p><p>出现下面的错误</p><pre><code class="language-yaml">FATAL &#123;  err: Error: Spawn failed      at ChildProcess.&lt;anonymous&gt; (F:\desker\blog\node_modules\hexo-util\lib\spawn.js:51:21)      at ChildProcess.emit (node:events:527:28)      at ChildProcess.cp.emit (F:\desker\blog\node_modules\cross-spawn\lib\enoent.js:34:29)      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) &#123;    code: 128  &#125;</code></pre><h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><p>问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><h4 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h4><p>1.删除 <code>.deploy_git</code> 文件夹;<br>2.输入 <code>git config --global core.autocrlf false</code><br>3.然后，依次执行</p><pre><code class="language-yaml">hexo cleanhexo ghexo d</code></pre><h4 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h4><p>1.进入hexo根目录<br>2.直接把根目录的<code>.deploy_git</code>和<code>public</code>直接删除！<br>3.然后，依次执行</p><pre><code class="language-yaml">hexo cleanhexo ghexo d</code></pre><h4 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h4><p>1.进入hexo根目录的_config.yml<br>2.找到# Deployment<br>3.把<code> repo: https://github.com/你的名字/你的名字.github.io.git</code><br>改为<code> repo: git@github.com:你的名字/你的名字.github.io.git</code><br>5.然后，依次执行：</p><pre><code class="language-yaml">hexo cleanhexo ghexo d</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     

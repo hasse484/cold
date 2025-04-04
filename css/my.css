@@ -1,1 +1,12 @@
 /* Here is your custom css styles. */
+
+/* 字体修改 */
+@font-face{
+    font-family: 'zzw';
+    src: url('../font/zzw.woff2');
+}
+
+body{
+    font-family: 'zzw';
+}
+
