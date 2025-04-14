@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>C程序基本格式</title>
+      <link href="/2025/04/14/C%E7%A8%8B%E5%BA%8F%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F/"/>
+      <url>/2025/04/14/C%E7%A8%8B%E5%BA%8F%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h3 id="C语言的Hello-World"><a href="#C语言的Hello-World" class="headerlink" title="C语言的Hello World"></a>C语言的Hello World</h3><pre><code class="language-c">#include &lt;stdio.h&gt;int main() &#123;    printf(&quot;Hello World!&quot;);  return 0;&#125;</code></pre><p>C语言程序入口是<strong>Main</strong>函数，写法如下</p><pre><code class="language-c">int main() &#123;  //符号要用英文符号    程序代码...&#125;</code></pre><p>把一段话打印到控制台需要**printf(内容)**完成，这是一种函数调用</p><pre><code class="language-c">printf(&quot;Hello World!&quot;);   //最后叫;结束这一行（英文符号）</code></pre><p>双引号囊括的内容称为字符串</p><pre><code>include &lt;stdio.h&gt; //引入函数库</code></pre><p>引入系统库提供的函数包括<strong>printf</strong></p><p>C程序的固定代码模式</p><pre><code class="language-c">#include &lt;stdio.h&gt;int main() &#123;    程序代码&#125;</code></pre><p>注释文本采用</p><pre><code class="language-c">#include &lt;stdio.h&gt;/* * 多行注释 * 多行注释 */int main() &#123;                 //单行注释    printf(&quot;Hello World!&quot;);  //单行注释  return 0; //单行注释&#125;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C语言 </tag>
+            
+            <tag> 编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>集合</title>
       <link href="/2025/04/05/%E9%9B%86%E5%90%88/"/>
       <url>/2025/04/05/%E9%9B%86%E5%90%88/</url>
