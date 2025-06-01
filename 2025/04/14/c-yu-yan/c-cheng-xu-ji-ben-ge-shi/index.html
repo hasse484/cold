@@ -4,12 +4,8 @@
 
 <head>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <meta name="keywords" content="面向过程与面向对象区别, 暮雪，冷火，博客，算法，Hexo，暮雪的博客，冷火的博客,神里绫华,绫华,kamisato,ayaka,Java,MySQL,算法,代码,coldfire">
-    <meta name="description" content="Python面向过程 vs 面向对象（生活化解释）1. 面向过程（Procedural Programming）🧑‍🍳 就像做菜时的菜谱
-一步一步执行，先做什么，后做什么
-数据和操作分开，比如菜谱（步骤）和食材（数据）是分开的
-
-示例代">
+    <meta name="keywords" content="C程序基本格式, 暮雪，冷火，博客，算法，Hexo，暮雪的博客，冷火的博客,神里绫华,绫华,kamisato,ayaka,Java,MySQL,算法,代码,coldfire">
+    <meta name="description" content="C语言的Hello World程序分析">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>面向过程与面向对象区别 | 暮雪の博客</title>
+    <title>C程序基本格式 | 暮雪の博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -276,12 +272,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">面向过程与面向对象区别</h1>
+                    <h1 class="description center-align post-title">C程序基本格式</h1>
                 </div>
             </div>
         </div>
@@ -303,12 +299,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                                <span class="chip bg-color">C语言</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                <span class="chip bg-color">编程</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                编程
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -317,7 +330,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-06-01
+                    2025-04-14
                 </div>
                 
 
@@ -326,14 +339,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    534
+                    194
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -351,97 +364,45 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Python面向过程-vs-面向对象（生活化解释）"><a href="#Python面向过程-vs-面向对象（生活化解释）" class="headerlink" title="Python面向过程 vs 面向对象（生活化解释）"></a>Python面向过程 vs 面向对象（生活化解释）</h1><h2 id="1-面向过程（Procedural-Programming）"><a href="#1-面向过程（Procedural-Programming）" class="headerlink" title="1. 面向过程（Procedural Programming）"></a>1. 面向过程（Procedural Programming）</h2><h3 id="🧑‍🍳-就像做菜时的菜谱"><a href="#🧑‍🍳-就像做菜时的菜谱" class="headerlink" title="🧑‍🍳 就像做菜时的菜谱"></a>🧑‍🍳 就像做菜时的菜谱</h3><ul>
-<li><strong>一步一步执行</strong>，先做什么，后做什么</li>
-<li><strong>数据和操作分开</strong>，比如菜谱（步骤）和食材（数据）是分开的</li>
-</ul>
-<h3 id="示例代码：煮泡面（面向过程）"><a href="#示例代码：煮泡面（面向过程）" class="headerlink" title="示例代码：煮泡面（面向过程）"></a>示例代码：煮泡面（面向过程）</h3><pre><code class="language-python"># 1. 准备食材
-noodles = &quot;泡面&quot;
-water = &quot;热水&quot;
-seasoning = &quot;调料包&quot;
+                <h3 id="C语言的Hello-World"><a href="#C语言的Hello-World" class="headerlink" title="C语言的Hello World"></a>C语言的Hello World</h3><pre><code class="language-c">#include &lt;stdio.h&gt;
 
-# 2. 定义步骤
-def boil_water():
-    print(&quot;烧水...&quot;)
-
-def add_noodles():
-    print(f&quot;加入&#123;noodles&#125;...&quot;)
-
-def add_seasoning():
-    print(f&quot;加入&#123;seasoning&#125;...&quot;)
-
-# 3. 按步骤执行
-boil_water()
-add_noodles()
-add_seasoning()
+int main() &#123;
+    printf(&quot;Hello World!&quot;);
+  	return 0;
+&#125;
 </code></pre>
-<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
-<li>代码是<strong>一步一步执行</strong>的，就像菜谱</li>
-<li>如果要做更复杂的菜（比如炒菜），代码会变得很长、难维护</li>
-</ul>
-<hr>
-<h2 id="2-面向对象（OOP）"><a href="#2-面向对象（OOP）" class="headerlink" title="2. 面向对象（OOP）"></a>2. 面向对象（OOP）</h2><h3 id="📦-就像现实世界的”对象”"><a href="#📦-就像现实世界的”对象”" class="headerlink" title="📦 就像现实世界的”对象”"></a>📦 就像现实世界的”对象”</h3><ul>
-<li><strong>把数据和操作封装在一起</strong>，比如”泡面”是一个对象</li>
-<li><strong>更接近现实世界</strong>，比如”人”有名字（属性）、会走路（方法）</li>
-</ul>
-<h3 id="示例代码：泡面（面向对象）"><a href="#示例代码：泡面（面向对象）" class="headerlink" title="示例代码：泡面（面向对象）"></a>示例代码：泡面（面向对象）</h3><pre><code class="language-python">class InstantNoodles:
-    def __init__(self, noodles, water, seasoning):
-        self.noodles = noodles  # 属性
-        self.water = water
-        self.seasoning = seasoning
-
-    def cook(self):  # 方法
-        print(f&quot;烧&#123;self.water&#125;...&quot;)
-        print(f&quot;加入&#123;self.noodles&#125;...&quot;)
-        print(f&quot;加入&#123;self.seasoning&#125;...&quot;)
-
-# 创建一包泡面
-my_noodles = InstantNoodles(&quot;泡面&quot;, &quot;热水&quot;, &quot;调料包&quot;)
-my_noodles.cook()  # 调用方法
+<p>C语言程序入口是<strong>Main</strong>函数，写法如下</p>
+<pre><code class="language-c">int main() &#123;  //符号要用英文符号
+    程序代码...
+&#125;
 </code></pre>
-<h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><ul>
-<li><strong>泡面是一个对象</strong>，它有属性（面条、水、调料）和方法（cook）</li>
-<li>如果想做<strong>不同口味的泡面</strong>，只需要创建新对象，代码更灵活</li>
-</ul>
-<hr>
-<table>
-<thead>
-<tr>
-<th>场景</th>
-<th>面向过程</th>
-<th>面向对象</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>泡面</td>
-<td>按照菜谱一步步做</td>
-<td>把泡面当成”对象”，直接调用cook()</td>
-</tr>
-<tr>
-<td>汽车</td>
-<td>先踩油门，再换挡…</td>
-<td>直接car.drive()</td>
-</tr>
-<tr>
-<td>游戏</td>
-<td>先检测按键，再移动角色…</td>
-<td>直接player.move()</td>
-</tr>
-<tr>
-<td>适合场景</td>
-<td>简单任务（如计算器）</td>
-<td>复杂系统（如游戏、网站</td>
-</tr>
-</tbody></table>
-<hr>
-<h2 id="总结"><a href="#总结" class="headerlink" title=". 总结"></a>. 总结</h2><ul>
-<li><strong>面向过程</strong>：<strong>“怎么做”</strong>（一步一步来，像菜谱）</li>
-<li><strong>面向对象</strong>：<strong>“谁来做”</strong>（对象自己负责，比如泡面自己会cook）</li>
-</ul>
-<h3 id="🖥️-生活类比"><a href="#🖥️-生活类比" class="headerlink" title="🖥️ 生活类比"></a>🖥️ 生活类比</h3><ul>
-<li><strong>面向过程</strong> → 自己动手组装电脑（一步一步装CPU、内存…）</li>
-<li><strong>面向对象</strong> → 买一台现成的电脑（按开机键就能用）</li>
-</ul>
+<p>把一段话打印到控制台需要**printf(内容)**完成，这是一种函数调用</p>
+<pre><code class="language-c">printf(&quot;Hello World!&quot;);   //最后叫;结束这一行（英文符号）
+</code></pre>
+<p>双引号囊括的内容称为字符串</p>
+<pre><code>include &lt;stdio.h&gt; //引入函数库
+</code></pre>
+<p>引入系统库提供的函数包括<strong>printf</strong></p>
+<p>C程序的固定代码模式</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() &#123;
+    程序代码
+&#125;
+</code></pre>
+<p>注释文本采用</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+/*
+ * 多行注释
+ * 多行注释
+ */
+
+int main() &#123;                 //单行注释
+    printf(&quot;Hello World!&quot;);  //单行注释
+  	return 0;				 //单行注释
+&#125;
+</code></pre>
 
                 
             </div>
@@ -468,7 +429,7 @@ my_noodles.cook()  # 调用方法
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.tenkinoko.top/2025/06/01/python%E5%9F%BA%E7%A1%80/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%8C%BA%E5%88%AB/">https://www.tenkinoko.top/2025/06/01/python%E5%9F%BA%E7%A1%80/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%8C%BA%E5%88%AB/</a>
+                    <a href="https://www.tenkinoko.top/2025/04/14/c-yu-yan/c-cheng-xu-ji-ben-ge-shi/">https://www.tenkinoko.top/2025/04/14/c-yu-yan/c-cheng-xu-ji-ben-ge-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -505,7 +466,15 @@ my_noodles.cook()  # 调用方法
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                                    <span class="chip bg-color">C语言</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                                    <span class="chip bg-color">编程</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -865,18 +834,17 @@ my_noodles.cook()  # 调用方法
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/06/01/python%E5%9F%BA%E7%A1%80/%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%8C%BA%E5%88%AB/">
+                <a href="/2025/04/14/c-yu-yan/c-yu-yan-de-ji-ben-shu-ju-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.png" class="responsive-img" alt="面向过程与面向对象区别">
+                        <img src="/medias/featureimages/14.png" class="responsive-img" alt="C语言的基本数据类型">
                         
-                        <span class="card-title">面向过程与面向对象区别</span>
+                        <span class="card-title">C语言的基本数据类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -886,18 +854,33 @@ my_noodles.cook()  # 调用方法
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-06-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-04-14
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            暮雪（冷火）
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                    编程
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -908,32 +891,44 @@ my_noodles.cook()  # 调用方法
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/05/27/python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/Series%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE/">
+                <a href="/2025/04/04/ce-shi-wen-zhang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.png" class="responsive-img" alt="Series操作数据">
+                        <img src="/medias/featureimages/24.png" class="responsive-img" alt="Hexo d上传到Github报错解决办法">
                         
-                        <span class="card-title">Series操作数据</span>
+                        <span class="card-title">Hexo d上传到Github报错解决办法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Hexo d错误
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-05-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-04-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            暮雪（冷火）
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
                 </div>
                 
             </div>
