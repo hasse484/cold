@@ -2,61 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.tenkinoko.top/2025/06/01/python-ji-chu/mian-xiang-guo-cheng-yu-mian-xiang-dui-xiang-qu-bie/</loc>
-    
-    <lastmod>2025-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/2025/05/26/python-shu-ju-fen-xi/pandas/</loc>
-    
-    <lastmod>2025-05-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/2025/05/27/python-shu-ju-fen-xi/series-cao-zuo-shu-ju/</loc>
-    
-    <lastmod>2025-05-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/2025/04/15/python-ji-chu/python-xun-huan/</loc>
-    
-    <lastmod>2025-04-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.tenkinoko.top/2025/04/04/ce-shi-wen-zhang/</loc>
-    
-    <lastmod>2025-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/2025/04/14/c-yu-yan/c-yu-yan-de-ji-ben-shu-ju-lei-xing/</loc>
-    
-    <lastmod>2025-04-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/2025/04/14/c-yu-yan/c-cheng-xu-ji-ben-ge-shi/</loc>
     
     <lastmod>2025-04-15</lastmod>
     
@@ -121,7 +67,7 @@
 
   <url>
     <loc>https://www.tenkinoko.top/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,35 +75,7 @@
   
   <url>
     <loc>https://www.tenkinoko.top/tags/hexo/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/tags/C%E8%AF%AD%E8%A8%80/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/tags/python/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/tags/Python/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -166,14 +84,7 @@
   
   <url>
     <loc>https://www.tenkinoko.top/categories/hexo/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.tenkinoko.top/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2025-06-01</lastmod>
+    <lastmod>2025-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
